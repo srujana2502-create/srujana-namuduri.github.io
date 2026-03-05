@@ -125,7 +125,46 @@ p {
 .resume-link:hover {
   background: #1e3a5f;
 }
+/* Hero metrics */
+.hero-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 12px 0 16px 0;
+}
+.hero-metrics .metric {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f2e5c;
+  padding: 4px 10px;
+  background: #eef2f7;
+  border-radius: 6px;
+}
+
+/* Quick wins list */
+.quick-wins {
+  margin: 0;
+  padding-left: 20px;
+}
+.quick-wins li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+/* Case study pages */
+.case-study-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #0f2e5c;
+  text-decoration: none;
+}
+.case-study-back:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .header-inner { flex-direction: column; }
   .projects-grid { grid-template-columns: 1fr; }
+  .hero-metrics { flex-direction: column; }
 }
